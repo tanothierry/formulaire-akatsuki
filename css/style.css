@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 62.5%;
+}
+
+.main-content{
+    height: 100vh;
+    width: 100%;
+    background: rgb(207, 205, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-content{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 70%;
+    min-height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-left{
+    background: linear-gradient(rgba(10, 64, 85, 0.76), rgba(10, 64, 85, 0.76)) ,url('../img/img1.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    flex: 2;
+    min-height: 25rem;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.box-left h1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.8rem;
+    font-weight: bold;
+}
+
+.box-left ul{
+    margin-bottom: 4rem;
+}
+
+.box-left ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    padding-left: 1.5rem;
+    padding-top: .6rem;
+    color: white;
+}
+
+.box-left ul li span{
+    color: orange;
+    font-size: 1.6rem;
+    margin-right: 1.2rem;
+}
+
+.box-left p{
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    bottom: 10%;
+}
+
+i{
+    color: white;
+    font-size: 1.2rem;
+}
+
+button{
+    background: rgb(10, 64, 85);
+    padding: 1rem 3.4rem;
+    border: none;
+    color: white;
+    font-size: 1.23rem;
+    transition: .4s;
+    margin-bottom: 1rem;
+}
+
+button:hover{
+    background: rgba(10, 64, 85, 0.863);
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+
+
+.box-right{
+    background: rgb(255, 255, 255);
+    flex: 3;
+    min-height: 25rem;
+}
+
+form{
+    padding: 2rem 6rem;
+}
+
+label{
+    font-size: 1.4rem;
+}
+
+input,
+select{
+    width: 100%;
+    height: 2.2rem;
+    margin-top: .4rem;
+    padding-left: 1rem;
+}
+
+.mb-2{
+    margin-bottom: 1rem;
+}
+
+span{
+    color: rgb(190, 10, 10);
+}
+
+input:focus{
+    border: .1rem solid rgba(10, 85, 10, 0.76);
+    outline: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768){
+    form{
+        padding: 2rem;
+    }
+
+    .main-content{
+        min-height: 100vh;
+    }
+
+    .box-left p,
+    .box-left ul{
+        display: none!important;
+    }
+
+    i{
+        display: none;
+    }
+
+    .box-left{
+        height: 15rem;
+    }
+
+    .box-left ul{
+        margin-bottom: 0;
+    }
+}
+
